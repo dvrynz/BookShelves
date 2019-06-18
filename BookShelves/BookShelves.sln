@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookShelves.iOS", "BookShel
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookShelves", "BookShelves\BookShelves\BookShelves.csproj", "{D202E620-0D61-4375-9DDB-B1512D67C9C8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B43AE871-57FA-4DA1-9343-7C7BFBA83E24}"
+	ProjectSection(SolutionItems) = preProject
+		Credentials.txt = Credentials.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
