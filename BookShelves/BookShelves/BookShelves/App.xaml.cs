@@ -1,17 +1,30 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using BookShelves.Views;
+using Prism.Unity;
+using Prism.Ioc;
+using Prism;
 
 namespace BookShelves
 {
-    public partial class App : Application
+    public partial class App : PrismApplication
     {
-        public App()
+        public App(IPlatformInitializer initializer = null) : base(initializer) { }
+
+        protected override void RegisterTypes(IContainerRegistry containerRegistry)
+        {
+            
+        }
+
+        protected override void OnInitialized()
         {
             InitializeComponent();
 
             MainPage = new MainPage();
         }
+
+        #region DEFAULT APP OVERRIDES
 
         protected override void OnStart()
         {
@@ -27,5 +40,7 @@ namespace BookShelves
         {
             // Handle when your app resumes
         }
+
+        #endregion
     }
 }
