@@ -1,10 +1,7 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using BookShelves.Views;
-using Prism.Unity;
-using Prism.Ioc;
+﻿using BookShelves.Views;
 using Prism;
+using Prism.Ioc;
+using Prism.Unity;
 
 namespace BookShelves
 {
@@ -14,7 +11,7 @@ namespace BookShelves
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            
+            containerRegistry.RegisterForNavigation<MainPage>();
         }
 
         protected override void OnInitialized()
