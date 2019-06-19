@@ -20,6 +20,7 @@ namespace BookShelves
         {
             InitializeComponent();
             await NavigateToRootPage(nameof(View.MainPage), NavigationService);
+
         }
 
         private async Task NavigateToRootPage(string pageName, INavigationService navigationService)
@@ -27,6 +28,8 @@ namespace BookShelves
             var rootPage = $"{BASEURI}/{nameof(NavigationPage)}/{pageName}";
             await navigationService.NavigateAsync(rootPage);
         }
+
+        
 
         #region DEFAULT APP OVERRIDES
 

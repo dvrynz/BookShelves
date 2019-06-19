@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<local:PageBase
+    x:Class="BookShelves.Views.BookDetailsPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:local="clr-namespace:BookShelves.Views;assembly=BookShelves"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    Title="{Binding Title}"
+    Padding="10"
+    prism:ViewModelLocator.AutowireViewModel="True"
+    mc:Ignorable="d">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                HorizontalOptions="CenterAndExpand"
+                Text="Book Details Here!"
+                VerticalOptions="CenterAndExpand" />
+            <Button
+                BackgroundColor="Blue"
+                Command="{Binding NavigateBackToRootPageCommand}"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                Text="Go back to Root"
+                TextColor="White"
+                VerticalOptions="End" />
+        </StackLayout>
+    </ContentPage.Content>
+</local:PageBase>

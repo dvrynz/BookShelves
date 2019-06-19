@@ -1,16 +1,22 @@
-﻿using Prism.Navigation;
+﻿using Prism.Mvvm;
+using Prism.Navigation;
+using System.Threading.Tasks;
 
 namespace BookShelves.ViewModels
 {
-    public abstract class BaseViewModel
+    public abstract class BaseViewModel : BindableBase
     {
-        private readonly INavigationService _navigationService;
+        protected INavigationService NavigationService { get; private set; }
 
-        protected string Title { get; set; }
+        public string Title { get; set; }
 
-        public BaseViewModel(INavigationService navigationService)
+        public BaseViewModel(INavigationService navigationService) => NavigationService = navigationService;
+
+        protected async Task NavigateToPage(string pageName) => await NavigationService.NavigateAsync(pageName);
+
+        protected async Task NavigateToRootPage()
         {
-            _navigationService = navigationService;
+            var result = await NavigationService.GoBackToRootAsync();
         }
     }
 }

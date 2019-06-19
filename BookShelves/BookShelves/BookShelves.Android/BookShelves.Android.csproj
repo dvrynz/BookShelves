@@ -21,7 +21,7 @@
     <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <AndroidKeyStore>true</AndroidKeyStore>
+    <AndroidKeyStore>false</AndroidKeyStore>
     <AndroidSigningKeyStore>E:\CODELAB\DVRYNZ.BookShelves\BookShelves\debug.keystore</AndroidSigningKeyStore>
     <AndroidSigningStorePass>aipaiCh7ees</AndroidSigningStorePass>
     <AndroidSigningKeyAlias>rynld</AndroidSigningKeyAlias>

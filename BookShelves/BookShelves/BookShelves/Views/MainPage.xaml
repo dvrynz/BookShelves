@@ -10,10 +10,17 @@
     Title="{Binding Title}"
     prism:ViewModelLocator.AutowireViewModel="True"
     mc:Ignorable="d">
-    <StackLayout>
+    <StackLayout Padding="0,0,0,20">
         <Label
             HorizontalOptions="Center"
             Text="Welcome to Xamarin.Forms!"
             VerticalOptions="CenterAndExpand" />
+        <Button
+            BackgroundColor="Blue"
+            Command="{Binding NavigateToBookListPageCommand}"
+            FontAttributes="Bold"
+            Text="Go to Book titles"
+            TextColor="White"
+            VerticalOptions="End" />
     </StackLayout>
 </local:PageBase>
