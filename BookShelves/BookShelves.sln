@@ -7,11 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookShelves.Android", "Book
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookShelves.iOS", "BookShelves\BookShelves.iOS\BookShelves.iOS.csproj", "{019B15AD-E7F9-410C-A529-8A416ABD9C96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookShelves", "BookShelves\BookShelves\BookShelves.csproj", "{D202E620-0D61-4375-9DDB-B1512D67C9C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookShelves", "BookShelves\BookShelves\BookShelves.csproj", "{D202E620-0D61-4375-9DDB-B1512D67C9C8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B43AE871-57FA-4DA1-9343-7C7BFBA83E24}"
 	ProjectSection(SolutionItems) = preProject
 		Credentials.txt = Credentials.txt
+		Important.txt = Important.txt
 	EndProjectSection
 EndProject
 Global

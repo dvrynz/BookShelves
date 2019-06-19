@@ -1,21 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage
+<local:PageBase
     x:Class="BookShelves.Views.MainPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:local="clr-namespace:BookShelves.Views;assembly=BookShelves"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
     Title="{Binding Title}"
     prism:ViewModelLocator.AutowireViewModel="True"
     mc:Ignorable="d">
-
     <StackLayout>
-        <!--  Place new controls here  -->
         <Label
             HorizontalOptions="Center"
             Text="Welcome to Xamarin.Forms!"
             VerticalOptions="CenterAndExpand" />
     </StackLayout>
-
-</ContentPage>
+</local:PageBase>

@@ -1,14 +1,12 @@
-﻿using BookShelves.Infra;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace BookShelves.Views
 {
-    [Page]
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainPage : PageBase
+    public partial class PageBase : ContentPage
     {
-        public MainPage()
+        public PageBase()
         {
             InitializeComponent();
         }

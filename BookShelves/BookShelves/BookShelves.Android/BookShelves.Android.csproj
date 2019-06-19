@@ -21,7 +21,7 @@
     <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <AndroidKeyStore>false</AndroidKeyStore>
+    <AndroidKeyStore>true</AndroidKeyStore>
     <AndroidSigningKeyStore>E:\CODELAB\DVRYNZ.BookShelves\BookShelves\debug.keystore</AndroidSigningKeyStore>
     <AndroidSigningStorePass>aipaiCh7ees</AndroidSigningStorePass>
     <AndroidSigningKeyAlias>rynld</AndroidSigningKeyAlias>
@@ -62,9 +62,6 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="LiveXAML">
-      <Version>2.1.72</Version>
-    </PackageReference>
     <PackageReference Include="Prism.Unity.Forms">
       <Version>7.1.0.431</Version>
     </PackageReference>

@@ -1,28 +1,25 @@
-﻿using BookShelves.Views;
+﻿using BookShelves.Infra;
 using Prism;
 using Prism.Ioc;
 using Prism.Navigation;
 using Prism.Unity;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using View = BookShelves.Views;
 
 namespace BookShelves
 {
     public partial class App : PrismApplication
     {
-        private readonly string BASEURI = "http://www.BookShelves.com/";
+        private readonly string BASEURI = "http://www.BookShelves.com";
         public App(IPlatformInitializer initializer = null) : base(initializer) { }
 
-        protected override void RegisterTypes(IContainerRegistry containerRegistry)
-        {
-            containerRegistry.RegisterForNavigation<NavigationPage>();
-            containerRegistry.RegisterForNavigation<MainPage>();
-        }
+        protected override void RegisterTypes(IContainerRegistry containerRegistry) => Bootstrapper.InitIOCContainer<App>(containerRegistry);
 
         protected async override void OnInitialized()
         {
             InitializeComponent();
-            await NavigateToRootPage(nameof(MainPage), NavigationService);
+            await NavigateToRootPage(nameof(View.MainPage), NavigationService);
         }
 
         private async Task NavigateToRootPage(string pageName, INavigationService navigationService)

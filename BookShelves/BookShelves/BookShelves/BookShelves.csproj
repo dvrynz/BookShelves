@@ -20,4 +20,10 @@
   <ItemGroup>
     <Folder Include="Entities\" />
   </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\PageBase.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
 </Project>

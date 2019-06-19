@@ -1,0 +1,3 @@
+==== Nuget Packages installed ========
+1. LiveXaml (PCL only)
+2. Prism.Unity.Forms (All Platforms)
